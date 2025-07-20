@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Цель — современный JS
+    "module": "ES2022", // Модульная система — ES модули
+    "moduleResolution": "NodeNext", // Разрешение модулей для Node.js с ESM
+    "outDir": "./dist", // Папка для скомпилированных файлов
+    "rootDir": "./", // Корневая папка исходников
+    "esModuleInterop": true, // Позволяет использовать commonjs пакеты с import
+    "strict": true // Включает строгую типизацию
+  },
+  "include": ["*.ts"]
+}
