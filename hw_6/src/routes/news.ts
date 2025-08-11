@@ -1,7 +1,15 @@
 import { Router, Request, Response } from "express";
-import { Table, NewsPost } from "../../db/fileDB";
+import { Table, NewsPost, registerSchema } from "../../db/fileDB";
 
 const router = Router();
+
+registerSchema("news", {
+  id: Number,
+  title: String,
+  text: String,
+  createDate: Date,
+});
+
 const newsTable = new Table<NewsPost>("news");
 
 // get all news
@@ -36,6 +44,7 @@ router.post("/", (req: Request, res: Response) => {
     if (!title || !text) {
       return res.status(400).json({ error: "Missing title or text" });
     }
+    console.log("BODY:", req.body);
     const newPost = newsTable.create({ title, text });
     res.status(201).json(newPost);
   } catch {
