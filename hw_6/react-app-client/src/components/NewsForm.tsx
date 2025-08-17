@@ -10,8 +10,8 @@ const NewsForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await createNews({ title, text });
-      navigate("/"); 
+      await createNews({ title, text, genre: "Other", isPrivate: false });
+      navigate("/");
     } catch (err) {
       console.error("Error creating news:", err);
     }
@@ -20,7 +20,15 @@ const NewsForm = () => {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Додати новину</h1>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: "400px" }}>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+          maxWidth: "400px",
+        }}
+      >
         <input
           type="text"
           placeholder="Заголовок"

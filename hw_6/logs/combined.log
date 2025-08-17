@@ -1,0 +1,97 @@
+2025-08-17 12:12:44 [INFO]: 🚀 Server is running on http://localhost:8000
+2025-08-17 12:13:26 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:13:26 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:13:37 [INFO]: Incoming request: GET /api/newsposts/2
+2025-08-17 12:13:37 [INFO]: Incoming request: GET /api/newsposts/2
+2025-08-17 12:13:40 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:13:40 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:14:06 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"паропрорп","text":"прорпорпоп"}
+2025-08-17 12:14:06 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:67:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:582:12)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:291:5)
+2025-08-17 12:14:40 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:14:56 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"ар","text":"парап"}
+2025-08-17 12:14:56 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:67:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:582:12)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:291:5)
+2025-08-17 12:25:11 [INFO]: Incoming request: POST /newsposts Body: {"title":"ар","text":"парап"}
+2025-08-17 12:32:26 [INFO]: Incoming request: POST /newsposts Body: {"title":"ар","text":"парап"}
+2025-08-17 12:34:12 [INFO]: Incoming request: POST /newsposts Body: {"title":"ПАРАПРПАРАП","text":"РАРАПРАП"}
+2025-08-17 12:35:02 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"9ГШ9ГШ9","text":"ГШГ9"}
+2025-08-17 12:35:02 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:67:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:582:12)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:291:5)
+2025-08-17 12:35:09 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"9ГШ9ГШ9","text":"ГШГ9"}
+2025-08-17 12:35:09 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:67:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:582:12)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:291:5)
+2025-08-17 12:54:29 [INFO]: 🚀 Server is running on http://localhost:8000
+2025-08-17 12:54:41 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:54:41 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 12:54:53 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"ghjmhg","text":"ghjghjgh"}
+2025-08-17 12:54:53 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:67:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:582:12)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:291:5)
+2025-08-17 13:04:17 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"ghjmhg","text":"ghjghjgh"}
+2025-08-17 13:04:17 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:67:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:582:12)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:291:5)
+2025-08-17 13:16:50 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 13:16:50 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 13:17:00 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"nmbnv","text":"bnvmbnm","genre":"Other","isPrivate":false}
+2025-08-17 13:17:00 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 13:17:00 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 13:17:06 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-17 13:17:06 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-17 13:17:08 [INFO]: Incoming request: DELETE /api/newsposts/6
+2025-08-17 13:17:08 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 13:17:08 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:31:18 [INFO]: 🚀 Server is running on http://localhost:8000

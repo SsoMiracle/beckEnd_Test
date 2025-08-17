@@ -14,8 +14,8 @@ const NewsForm = () => {
       return;
     }
     try {
-      await createNews({ title, text });
-      navigate("/"); 
+      await createNews({ title, text, genre: "Other", isPrivate: false });
+      navigate("/");
     } catch (err) {
       console.error("Error creating news:", err);
       alert("Помилка при створенні новини");
@@ -25,7 +25,15 @@ const NewsForm = () => {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Додати новину</h1>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: "400px" }}>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+          maxWidth: "400px",
+        }}
+      >
         <input
           type="text"
           placeholder="Заголовок"

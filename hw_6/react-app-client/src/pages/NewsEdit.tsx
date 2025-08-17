@@ -32,7 +32,12 @@ const NewsEdit: React.FC = () => {
       return;
     }
     try {
-      await updateNews(String(id), { title, text });
+      await updateNews(String(id), {
+        title,
+        text,
+        genre: "Other",
+        isPrivate: false,
+      });
       navigate(`/news/${id}`);
     } catch (err) {
       console.error("Error updating:", err);
@@ -45,12 +50,33 @@ const NewsEdit: React.FC = () => {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Редагувати новину</h1>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 12, maxWidth: 600 }}>
-        <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Заголовок" required />
-        <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder="Текст" rows={8} required />
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 12,
+          maxWidth: 600,
+        }}
+      >
+        <input
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Заголовок"
+          required
+        />
+        <textarea
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Текст"
+          rows={8}
+          required
+        />
         <div style={{ display: "flex", gap: 8 }}>
           <button type="submit">Зберегти</button>
-          <button type="button" onClick={() => navigate(-1)}>Відмінити</button>
+          <button type="button" onClick={() => navigate(-1)}>
+            Відмінити
+          </button>
         </div>
       </form>
     </div>
