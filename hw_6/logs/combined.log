@@ -95,3 +95,113 @@
 2025-08-17 13:17:08 [INFO]: Incoming request: GET /api/newsposts
 2025-08-17 13:17:08 [INFO]: Incoming request: GET /api/newsposts
 2025-08-17 15:31:18 [INFO]: 🚀 Server is running on http://localhost:8000
+2025-08-17 15:31:35 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:31:35 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:35:49 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:35:58 [INFO]: Incoming request: GET /.well-known/appspecific/com.chrome.devtools.json
+2025-08-17 15:40:07 [INFO]: Incoming request: GET /api/newsposts/2
+2025-08-17 15:40:07 [INFO]: Incoming request: GET /api/newsposts/2
+2025-08-17 15:40:10 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:40:10 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:40:11 [INFO]: Incoming request: GET /api/newsposts/3
+2025-08-17 15:40:11 [INFO]: Incoming request: GET /api/newsposts/3
+2025-08-17 15:40:13 [INFO]: Incoming request: DELETE /api/newsposts/3
+2025-08-17 15:40:13 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:40:13 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:40:14 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:40:14 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:40:15 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:40:15 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:40:22 [INFO]: Incoming request: PUT /api/newsposts/5 Body: {"title":"ав5а4в5а4в5454545454а45","text":"hkhjk"}
+2025-08-17 15:40:22 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:78:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at param (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:600:14)
+    at param (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:610:14)
+2025-08-17 15:44:53 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:44:55 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:45:00 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:45:02 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:45:08 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:45:28 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:45:48 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:45:50 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:46:00 [INFO]: Incoming request: PUT /api/newsposts/5 Body: {"title":"hgjkh","text":"hkhjk","genre":"Other","isPrivate":"false"}
+2025-08-17 15:46:00 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:78:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at param (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:600:14)
+    at param (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:610:14)
+2025-08-17 15:46:38 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:46:38 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:46:40 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:46:40 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:46:41 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:46:41 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:46:44 [INFO]: Incoming request: PUT /api/newsposts/5 Body: {"title":"hgjkhfhfghf","text":"hkhjkfghfghf","genre":"Other","isPrivate":"false"}
+2025-08-17 15:46:44 [ERROR]: ValidationError: Invalid newspost data
+    at validateBody (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:36:11)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\src\routes\news.ts:78:5
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:295:15
+    at param (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:600:14)
+    at param (C:\Users\Admin\Desktop\Node_practice\node_homework\hw_6\node_modules\router\index.js:610:14)
+2025-08-17 15:47:00 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:03 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:07 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:09 [INFO]: Incoming request: PUT /api/newsposts/5 Body: {"title":"hgjkh","text":"hkhjk","genre":"Other","isPrivate":false}
+2025-08-17 15:48:09 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:09 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:12 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:12 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:15 [INFO]: Incoming request: PUT /api/newsposts/5 Body: {"title":"hgjkh","text":"hkhjkапрапрапрап","genre":"Other","isPrivate":false}
+2025-08-17 15:48:15 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:15 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:16 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:48:16 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:48:19 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:19 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:20 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:20 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:24 [INFO]: Incoming request: PUT /api/newsposts/5 Body: {"title":"hgjkh5445564545","text":"hkhjkапрапрапрап","genre":"Other","isPrivate":false}
+2025-08-17 15:48:24 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:24 [INFO]: Incoming request: GET /api/newsposts/5
+2025-08-17 15:48:25 [INFO]: Incoming request: GET /api/newsposts
+2025-08-17 15:48:25 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:18 [INFO]: 🚀 Server is running on http://localhost:8000
+2025-08-20 17:23:27 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:27 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:30 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"ygfghfg","text":"fghgfhfg","genre":"Other","isPrivate":false}
+2025-08-20 17:23:30 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:30 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:33 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:33 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:34 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:34 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:36 [INFO]: Incoming request: PUT /api/newsposts/6 Body: {"title":"ygfghfg","text":"fghgfhfgdfgdfgdfgdfgdfgdfgdfgdfgdf","genre":"Other","isPrivate":false}
+2025-08-20 17:23:36 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:36 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:37 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:37 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:39 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:39 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 17:23:40 [INFO]: Incoming request: DELETE /api/newsposts/6
+2025-08-20 17:23:40 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:23:40 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 17:24:00 [INFO]: 🚀 Server is running on http://localhost:8000

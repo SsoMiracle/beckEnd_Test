@@ -7,6 +7,7 @@ import newsRoutes from "./routes/news";
 import { registerSchema } from "../db/fileDB";
 import { logger } from "./utils/logger";
 import { errorHandler } from "./middlewares/errorHandler";
+import authRoutes from "./routes/auth";
 
 dotenv.config();
 
@@ -46,6 +47,7 @@ app.use((req: Request, _res: Response, next: NextFunction) => {
 
 // --- API роуты
 app.use("/api/newsposts", newsRoutes);
+app.use("/api/auth", authRoutes);
 
 // --- Раздача React-клиента
 app.use(express.static(path.join(__dirnameBase, "react-app-client", "build")));
