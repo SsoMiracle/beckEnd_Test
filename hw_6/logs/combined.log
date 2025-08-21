@@ -205,3 +205,27 @@
 2025-08-20 17:23:40 [INFO]: Incoming request: GET /api/newsposts
 2025-08-20 17:23:40 [INFO]: Incoming request: GET /api/newsposts
 2025-08-20 17:24:00 [INFO]: 🚀 Server is running on http://localhost:8000
+2025-08-20 23:52:44 [INFO]: 🚀 Server is running on http://localhost:8000
+2025-08-20 23:52:58 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:52:58 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:02 [INFO]: Incoming request: GET /api/newsposts/2
+2025-08-20 23:53:02 [INFO]: Incoming request: GET /api/newsposts/2
+2025-08-20 23:53:03 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:03 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:07 [INFO]: Incoming request: POST /api/newsposts Body: {"title":"dgdgdfgdfgfdgdfgdfgfdgf","text":"dfgfdgfgfdgfdgdfgf","genre":"Other","isPrivate":false}
+2025-08-20 23:53:07 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:07 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:09 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:09 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:10 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:10 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:13 [INFO]: Incoming request: PUT /api/newsposts/6 Body: {"title":"dgdgdfgdfgfdgdfgdfgfdgf","text":"dfgfdgfgfdgfdgdfgf1111111111111111111","genre":"Other","isPrivate":false}
+2025-08-20 23:53:13 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:13 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:15 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:15 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:16 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:16 [INFO]: Incoming request: GET /api/newsposts/6
+2025-08-20 23:53:17 [INFO]: Incoming request: DELETE /api/newsposts/6
+2025-08-20 23:53:17 [INFO]: Incoming request: GET /api/newsposts
+2025-08-20 23:53:17 [INFO]: Incoming request: GET /api/newsposts

@@ -3,6 +3,7 @@ import { Router, Request, Response, NextFunction } from "express";
 import { NewspostsService } from "../services/NewspostsService";
 import Ajv, { ErrorObject } from "ajv";
 import { ValidationError, NewspostsServiceError } from "../utils/errors";
+import passport from "passport";
 
 const router = Router();
 const ajv = new Ajv();
@@ -48,6 +49,15 @@ router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     next(e);
   }
 });
+
+// GET / Защищенный эндпоинт
+router.get(
+  "/protected",
+  passport.authenticate("jwt", { session: false }),
+  (req: Request, res: Response) => {
+    res.json({ message: "Вы успешно прошли аутентификацию!", user: req.user });
+  }
+);
 
 // GET /api/newsposts/:id
 router.get("/:id", async (req, res, next) => {
