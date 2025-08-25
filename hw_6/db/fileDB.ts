@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { Note } from "./db/schemas/notes"
+import { Note } from "./schemas/notes"
 
 const DB_PATH = path.join(__dirname, "db");
 
