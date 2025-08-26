@@ -1,15 +1,15 @@
-import pool from "../db/db";
+import pool from "../db/db.js";
 
 try {
   await pool.query(`
-    CREATE TABLE IF NOT EXISTS newsPosts (
+    CREATE TABLE IF NOT EXISTS videos (
       id SERIAL PRIMARY KEY,
-      title TEXT NOT NULL,
-      text TEXT NOT NULL,
-      created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      title TEXT,
+      views FLOAT4,
+      category TEXT
     );
   `);
-  console.log("✅ Таблица newsPosts создана");
+  console.log("✅ Таблица videos создана");
 } catch (err) {
   console.error("❌ Ошибка:", err);
 } finally {
