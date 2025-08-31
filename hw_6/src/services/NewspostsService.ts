@@ -1,30 +1,21 @@
-import { NewspostsRepository } from "../repositories/NewspostsRepository";
-import { NewsPost } from "../../db/fileDB"; 
+import { AppDataSource } from "../../db/data-source";
+import { NewsPost } from "../../db/entities/NewsPost"
+import { User } from "../../db/entities/User";
+
+const newsRepo = AppDataSource.getRepository(NewsPost);
 
 export class NewspostsService {
-  static getAll(params: { page: number; size: number }): NewsPost[] {
-    if (params.page < 0 || params.size <= 0) {
-      throw new Error("Невалидные параметры пагинации");
-    }
-    return NewspostsRepository.getAll(params);
+  static async getAll(params: { page: number; size: number }) {
+    return newsRepo.find({
+      relations: ["author"], 
+      skip: params.page * params.size,
+      take: params.size,
+      order: { created_date: "DESC" }
+    });
   }
 
-  static getById(id: number): NewsPost | null {
-    return NewspostsRepository.getById(id);
-  }
-
-  static create(data: Omit<NewsPost, "id">): NewsPost {
-    if (!data.title || !data.text) {
-      throw new Error("Title и text обязательны");
-    }
-    return NewspostsRepository.create(data);
-  }
-
-  static update(id: number, update: Partial<Omit<NewsPost, "id">>): NewsPost | null {
-    return NewspostsRepository.update(id, update);
-  }
-
-  static delete(id: number): number | null {
-    return NewspostsRepository.delete(id);
+  static async create(data: { title: string; text: string; author: User }) {
+    const news = newsRepo.create(data);
+    return newsRepo.save(news);
   }
 }

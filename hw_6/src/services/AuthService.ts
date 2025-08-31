@@ -6,7 +6,7 @@ import { User } from "../models/User";
 
 const JWT_SECRET = process.env.JWT_SECRET || "dev_secret";
 
-const isEmail = (email: string) => /^\S+@\S+\.\S+$/.test(email);
+const isEmail = (email: string) => /^\S+@\S+\.\S+$/i.test(email);
 
 export class AuthService {
   static async register(payload: {
@@ -26,37 +26,41 @@ export class AuthService {
       throw new ValidationError("Пароли не совпадают");
     }
 
-    const existingUser = UsersRepository.findByEmail(email);
+    const existingUser = await UsersRepository.findByEmail(email);
     if (existingUser) {
       throw new ValidationError("Пользователь с таким email уже существует");
     }
 
-    const hash: string = await bcrypt.hash(password, 10);
+    const hash = await bcrypt.hash(password, 10);
     const userData: Omit<User, "id" | "createDate"> = { email, password: hash };
-    const user: User = UsersRepository.create(userData);
+    const user = await UsersRepository.create(userData);
 
     const token = this.signToken(user.id, user.email);
-    return { token };
+    return { token, user: { id: user.id, email: user.email } };
   }
 
   static async login(payload: { email: string; password: string }) {
     const { email, password } = payload;
+
     if (!email || !password) {
       throw new ValidationError("Email и пароль обязательны");
     }
 
-    const user = UsersRepository.findByEmail(email);
-    if (!user) throw new ValidationError("Неверные учетные данные");
+    const user = await UsersRepository.findByEmail(email);
+    if (!user) {
+      throw new ValidationError("Неверные учетные данные");
+    }
 
     const match = await bcrypt.compare(password, user.password);
-    if (!match) throw new ValidationError("Неверные учетные данные");
+    if (!match) {
+      throw new ValidationError("Неверные учетные данные");
+    }
 
     const token = this.signToken(user.id, user.email);
-    return { token };
+    return { token, user: { id: user.id, email: user.email } };
   }
 
-  static signToken(id: number, email: string) {
-    const token = jwt.sign({ id, email }, JWT_SECRET, { expiresIn: "1d" });
-    return `Bearer ${token}`;
+  private static signToken(id: number, email: string) {
+    return jwt.sign({ id, email }, JWT_SECRET, { expiresIn: "1d" });
   }
 }
